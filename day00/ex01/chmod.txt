@@ -1,0 +1,20 @@
+https://codex.wordpress.org/Changing_File_Permissions:
+Permission Modes
+  7       7    7
+ user   group  world
+ r+w+x  r+x    r+x
+ 4+2+1  4+0+1  4+0+1  = 755
+The permission mode is computed by adding up the following values for the user, the file group, and for everyone else. The diagram shows how.
+
+Read 4 - Allowed to read files
+Write 2 - Allowed to write/modify files
+eXecute1 - Read/write/delete/modify/directory
+
+Alternative method using +/-
+http://www.thegeekstuff.com/2010/06/chmod-command-examples/
+
+
+I also update the timestamp with:
+touch -t 199912312359 file.txt
+
+Make sure the file has 39 characters as well so that the file size is 40. If you do this after the touch though, you will need to reapply the touch.
