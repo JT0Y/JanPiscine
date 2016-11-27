@@ -7,13 +7,13 @@
 # include <unistd.h>
 
 
-void write_numbers(int aone, int atwo, int bone, int btwo)
+void write_numbers(int aones, int atens, int bones, int btens)
 {
-    write(1, &aone, 1);
-    write(1, &atwo, 1);
+    write(1, &atens, 1);
+    write(1, &aones, 1);
     write(1, " ", 1);
-    write(1, &bone, 1);
-    write(1, &btwo, 1);
+    write(1, &btens, 1);
+    write(1, &bones, 1);
     write(1, " ", 1);
     write(1, "-", 1);
     write(1, " ", 1);
@@ -21,20 +21,35 @@ void write_numbers(int aone, int atwo, int bone, int btwo)
 
 void ft_print_comb2(void)
 {
-    int aone;
-    int atwo;
-    int bone;
-    int btwo;
+    int aones;
+    int atens;
+    int bones;
+    int btens;
 
-    aone = '0';
-    atwo = '0';
-    bone = '0';
-    btwo = '0';
 
-    while (aone < '9')
+    bones = '0';
+    btens = '0';
+    atens = '0';
+    aones = '0';
+    while (atens <= '9')
     {
-        aone++;
-        write_numbers(aone, atwo, bone, btwo);
+        while (aones <= '9')
+        {
+            while (btens <= '9')
+            {
+                while (bones <= '9')
+                {
+                    write_numbers(aones, atens, bones, btens);
+                    bones++;
+                }
+                bones = '0';
+                btens++;
+            }
+            btens = '0';
+            aones++;
+        }
+        aones = '0';
+        atens++;
     }
 }
 
