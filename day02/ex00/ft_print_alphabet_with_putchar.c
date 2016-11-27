@@ -2,6 +2,11 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+void ft_putchar(int letter)
+{
+    write(1, &letter, 1);
+}
+
 void ft_print_alphabet(void)
 {
     int i;
@@ -9,7 +14,7 @@ void ft_print_alphabet(void)
     i = 'a';
     while(i <= 'z')
     {
-        write(1, &i, 1);
+        ft_putchar(i);
         i++;
     }
 }
