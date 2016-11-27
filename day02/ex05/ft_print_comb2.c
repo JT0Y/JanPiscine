@@ -26,17 +26,16 @@ void ft_print_comb2(void)
     int bones;
     int btens;
 
-
-    bones = '0';
-    btens = '0';
     atens = '0';
-    aones = '0';
     while (atens <= '9')
     {
-        while (aones <= '9')
+        aones = atens + 1;
+        while (aones <= '8')
         {
+            btens = aones + 1;
             while (btens <= '9')
             {
+                bones = aones +1;
                 while (bones <= '9')
                 {
                     write_numbers(aones, atens, bones, btens);
