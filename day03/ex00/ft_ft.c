@@ -7,14 +7,15 @@ void ft_ft(int *nbr)
     *nbr = 42;
 }
 
-
-// How do I test this ?
-
 int main()
 {
+    int i;
     int *nbr;
-    *nbr = 133;
 
+    i = 133;
+    nbr = &i;
+
+    printf("%d\n", i);
     ft_ft(nbr);
-    printf("%d", *nbr);
+    printf("%d\n", i);
 }
