@@ -5,6 +5,6 @@ void ft_putchar(int c);
 
 int main()
 {
-	rush(9, 23);
+	rush(5, 3);
 	return (0);
 }
