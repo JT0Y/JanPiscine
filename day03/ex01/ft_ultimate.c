@@ -1,6 +1,10 @@
 // Create a function that takes a pointer to pointer to pointer to pointer to pointer to pointer
 // to pointer to pointer to pointer to int as a parameter and sets the value "42" to that int.
 
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
 void ft_ultimate_ft(int *********nbr)
 {
    *********nbr = 42;
@@ -9,17 +13,16 @@ void ft_ultimate_ft(int *********nbr)
 int main()
 {
     int *********nbr;
-    int i;
 
-    i = 33;
-    nbr  = &i;
-    nbr = nbr;
-    *nbr = nbr;
-    **nbr = nbr;
-    ***nbr = nbr;
-    ****nbr = nbr;
-    *****nbr = nbr;
-    ******nbr = nbr;
-    *******nbr = nbr;
-    ft_ultimate_ft(nbr);
+	nbr         = malloc(sizeof(int********));
+	*nbr        = malloc(sizeof(int*******));
+	**nbr       = malloc(sizeof(int******));
+	***nbr      = malloc(sizeof(int*****));
+	****nbr     = malloc(sizeof(int****));
+	*****nbr    = malloc(sizeof(int***));
+	******nbr   = malloc(sizeof(int**));
+	*******nbr  = malloc(sizeof(int*));
+	********nbr = malloc(sizeof(int));
+	ft_ultimate_ft(nbr);
+    printf("%d", *********nbr);
 }
