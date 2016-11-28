@@ -1,0 +1,9 @@
+This will create a directory named 'learning_c'
+Change directory
+make 3 files called bsplNUMBERSHERE.c
+mkdir learning_c
+cd learning_c
+touch bspl{0001..0003}.c
+
+
+

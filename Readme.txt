@@ -48,6 +48,11 @@ mycodeschool - https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA
 MAKEFILES:
 best resource I've found so far - http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
 
+ONLINE C:
+A C repl - https://repl.it/languages/c
+Code Chef, run c code online - https://www.codechef.com/ide
+Great tool for step by step visualization - http://www.pythontutor.com/visualize.html
+
 VIM:
 Great Vim Plugins all bundled together -  http://vim.spf13.com/
 Vim challenges - http://www.vimgolf.com/
