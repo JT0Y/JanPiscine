@@ -4,14 +4,17 @@
 
 void ft_ft(int *nbr)
 {
-    char ftstring;
-
-    ftstring = "42";
+    *nbr = 42;
 }
+
+
+// How do I test this ?
 
 int main()
 {
     int *nbr;
-    *nbr = 143;
+    *nbr = 133;
+
     ft_ft(nbr);
+    printf("%d", *nbr);
 }
