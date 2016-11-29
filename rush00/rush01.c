@@ -26,7 +26,7 @@ int rush(int x, int y)
             // This is targeting the bottom right marker
             else if (x == 1 && y == 1)
                 ft_putchar('/');
-            else if((x != 1 && y != y_start_point) && y != 1)
+            else if((y != 1 && y != y_start_point) && x != 1)
                 ft_putchar(' ');
             else
                 ft_putchar('*');
