@@ -44,6 +44,7 @@ https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html
 
 GENERAL:
 mycodeschool - https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA
+The C Awesome List - https://github.com/aleksandar-todorovic/awesome-c
 
 MAKEFILES:
 best resource I've found so far - http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
